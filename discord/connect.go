@@ -220,6 +220,7 @@ func autoUpdateMessages(s *discordgo.Session) {
 						}
 					}
 					message = message + extra
+					message = message + "\nData courtesy of diablo2.io"
 					s.ChannelMessageSend(dm.ChannelID, message)
 				}				
 			}			
