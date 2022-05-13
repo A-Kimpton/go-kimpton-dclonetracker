@@ -48,7 +48,7 @@ func (s D2CloneState) PrettyString() string {
 	}
 	hardcore := "Softcore"
 	if s.IsHardcore {
-		ladder = "Hardcore"
+		hardcore = "Hardcore"
 	}
 	progress := fmt.Sprintf("%d/%d", s.Progress, MAX_CLONE_LEVELS)
 	return fmt.Sprintf("[%s][%s][%s] has progress: %s", s.Region, ladder, hardcore, progress)
